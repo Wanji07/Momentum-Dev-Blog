@@ -1,0 +1,20 @@
+#card-svg {
+    filter: invert(41%) sepia(13%) saturate(859%) hue-rotate(190deg) brightness(96%) contrast(89%);
+}
+
+#pagination-svg {
+    filter: invert(41%) sepia(13%) saturate(859%) hue-rotate(190deg) brightness(96%) contrast(89%);
+}
+
+#subscription-svg {
+    filter: brightness(0) invert(1);
+}
+
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}

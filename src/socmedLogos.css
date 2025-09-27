@@ -1,0 +1,8 @@
+.white-svg {
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+    filter: invert(41%) sepia(13%) saturate(859%) hue-rotate(190deg) brightness(96%) contrast(89%);
+    padding: 5px;
+    width: 35px;
+}
