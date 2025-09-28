@@ -2,11 +2,15 @@
 
 A personal development blog built with **React** and **Tailwind CSS**, created as my first full project to document coding progress, experiments, and learning journey.
 
+## 🌐 Vercel Link
+- https://momentum-dev-blog.vercel.app/ 
+
 ---
 
 ## ✨ Features
 - 📝 Blog-style layout for posts and updates  
 - 🎨 Modern responsive design with Tailwind CSS  (SOON!)
+
 ---
 
 ## 🛠️ Tech Stack
