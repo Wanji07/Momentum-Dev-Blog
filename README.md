@@ -6,10 +6,7 @@ A personal development blog built with **React** and **Tailwind CSS**, created a
 
 ## ✨ Features
 - 📝 Blog-style layout for posts and updates  
-- 🎨 Modern responsive design with Tailwind CSS  
-- ⚡ Fast and lightweight React setup  
-- 📂 Organized project structure for scalability  
-
+- 🎨 Modern responsive design with Tailwind CSS  (SOON!)
 ---
 
 ## 🛠️ Tech Stack
