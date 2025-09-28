@@ -13,7 +13,7 @@ A personal development blog built with **React** and **Tailwind CSS**, created a
 ---
 
 ## 🛠️ Tech Stack
-- **Frontend:** React, Vite (or CRA if used)  
+- **Frontend:** React, Vite
 - **Styling:** Tailwind CSS  
 - **Version Control:** Git + GitHub
 
