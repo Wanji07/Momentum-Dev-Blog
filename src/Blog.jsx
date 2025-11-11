@@ -1,14 +1,13 @@
-<<<<<<< HEAD
-import SocmedLogos from './socmedLogos.jsx';
 import MomentumLogo from './assets/logo_white_transparent.png';
 import MomentumBackground from './assets/devBlogBackground.png';
+import Subject from './assets/subject.png'
 import LeftArrowSVG from './assets/left-arrow.svg';
 import RightArrowSVG from './assets/right-arrow.svg';
 import MailLogo from './assets/mail-logo.svg'
 import BlogCard from './BlogCard.jsx';
-import './App.css';
+import './Blog.css';
 
-function App() {
+function Blog() {
   return (
     <>
       <nav className="my-10 flex justify-evenly items-center gap-15" style={{marginTop: '10px', marginBottom: '10px'}}>
@@ -27,11 +26,10 @@ function App() {
           <input type="text" className="border-1 border-[#616988]/80 focus:outline-none placeholder:text-[#616988] placeholder:italic placeholder:p-3" placeholder="Search" />
         </div>
         <div id="socmedLogosContainer">
-          <SocmedLogos />
         </div>
       </nav>
-      <main className="relative">
-        <img src={MomentumBackground} className="h-150 w-full object-cover object-top"></img>
+      <main className="relative overflow-hidden">
+        <img src={MomentumBackground} className="h-150 w-full object-cover object-top" />
         <div className="absolute top-45 left-30" id="heroPageContent">
           <h2 className="tracking-[4.5px] text-[#4175E6] [text-shadow:2px_2px_5px_black]" id="heroContent1">WELCOME TO MY BLOG</h2>
           <h1 className="max-w-80 text-[40px] font-semibold text-[#FFFFFF] opacity-80">Momentum Never <span className="text-[#4175E6]">Stops</span>.</h1>
@@ -42,7 +40,8 @@ function App() {
         </div>
         <div className="absolute" id="heroPageName"  style={{ top: '40%', right: '40%' }}>
           <h1 className="font-extralight tracking-[2px] text-[15px]">William Miguel Enriquez</h1>
-          <p className="font-light tracking-[2px] text-[15px]">An Anspiring Software Engineer</p>
+          <p className="font-light tracking-[2px] text-[15px]">An Aspiring Software Engineer</p>
+          <img src={Subject} className="absolute h-[800px] max-w-[850px]" style={{bottom: '-20em', left: '14em'}} />
         </div>
       </main>
       <section>
@@ -97,81 +96,10 @@ function App() {
         </nav>
         <section className="flex justify-around items-center bg-[#0A0B10]" style={{paddingTop: '5px', paddingBottom: '5px'}}>
           <p className="text-[#FFFFFF]/50 text-[13px]">© 2025 | All Rights Reserved.</p>
-          <SocmedLogos />
         </section>
       </footer>
     </>
   )
-=======
-import MomentumLogo from './assets/logo_white_transparent.png';
-import DarkVeil from './components/DarkVeil.jsx';
-import { motion } from "motion/react"
-import discordLogoUrl from './assets/discord.svg';
-import facebookLogoUrl from './assets/facebook.svg';
-import instagramLogoUrl from './assets/instagram.svg';
-import twitterLogoUrl from './assets/twitter-x.svg';
-import youtubeLogoUrl from './assets/youtube.svg';
-import './App.css';
-
-function App() {
-return (
-    <>
-        <nav className="my-10 flex justify-evenly items-center gap-15" style={{marginTop: '10px', marginBottom: '10px'}}>
-            <div className="flex justify-center items-center gap-5" id="logoContainer">
-                <img src={MomentumLogo} alt="Momentum Logo" className="w-15 h-15" />
-                <h1 className="font-normal tracking-[0.4em]" id="logo-font">MOMENTUM</h1>
-            </div>
-            <div id="navAction">
-                <ul className="flex flex-row justify-center gap-20" id="navButtons">
-                    <li><a href="#" className="text-white/80">Categories</a></li>
-                    <li><a href="#" className="text-white/80">About Me</a></li>
-                    <li><a href="#" className="text-white/80">Contact</a></li>
-                </ul>
-            </div>
-            <div id="socmedLogosContainer">
-              <ul className="flex">
-                  <li><button><a href="#"><img src={discordLogoUrl} className="white-svg opacity-80" /></a></button></li>
-                  <li><button><a href="https://www.facebook.com/lazywanji" target="_blank"><img src={facebookLogoUrl} className="white-svg opacity-80" /></a></button></li>
-                  <li><button><a href="https://www.instagram.com/lazywanji" target="_blank"><img src={instagramLogoUrl} className="white-svg opacity-80" /></a></button></li>
-                  <li><button><a href="https://x.com/lazywanji" target="_blank"><img src={twitterLogoUrl} className="white-svg opacity-80" /></a></button></li>
-                  <li><button><a href="https://www.youtube.com/channel/UCArUCc0TJWh_y869eeAw4hQ"target="_blank" ><img src={youtubeLogoUrl} className="white-svg opacity-80" /></a></button></li>
-              </ul>
-            </div>
-        </nav>
-
-    <div className="fixed inset-0 -z-10">
-        <DarkVeil />
-    </div>
-    <main className="relative">
-        <section className="flex flex-col items-center justify-center">
-            <motion.h1
-                initial={{filter: 'blur(20px)', y: 300, opacity: 0}}
-                animate={{filter: 'none', y: 100, opacity: 1}}
-                transition={{duration: 1.5, ease: "easeInOut"}}
-                className="text-[10em] text-center font-bold tracking-tighter"
-            >
-                Momentum
-            </motion.h1>
-            <p></p>
-        </section>
-    </main>
-        <footer className="absolute bottom-0 w-[100%]">
-        <section className="flex justify-around items-center bg-[#0A0B10]" style={{paddingTop: '5px', paddingBottom: '5px'}}>
-            <p className="text-[#FFFFFF]/50 text-[13px]">© 2025 | All Rights Reserved.</p>
-            <div id="socmedLogosContainer">
-              <ul className="flex">
-                  <li><button><a href="#"><img src={discordLogoUrl} className="dark-svg" /></a></button></li>
-                  <li><button><a href="https://www.facebook.com/lazywanji" target="_blank"><img src={facebookLogoUrl} className="dark-svg" /></a></button></li>
-                  <li><button><a href="https://www.instagram.com/lazywanji" target="_blank"><img src={instagramLogoUrl} className="dark-svg" /></a></button></li>
-                  <li><button><a href="https://x.com/lazywanji" target="_blank"><img src={twitterLogoUrl} className="dark-svg"/></a></button></li>
-                  <li><button><a href="https://www.youtube.com/channel/UCArUCc0TJWh_y869eeAw4hQ"target="_blank" ><img src={youtubeLogoUrl} className="dark-svg" /></a></button></li>
-              </ul>
-            </div>
-        </section>
-        </footer>
-    </>
-    )
->>>>>>> 42068eb (Version 2)
 }
 
-export default App
+export default Blog
